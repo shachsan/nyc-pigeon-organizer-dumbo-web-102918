@@ -3,7 +3,6 @@ def nyc_pigeon_organizer(data)
   pigeons=[]
   attributes = data.keys
 
-
   data.each do |attr, attr_info|
     attr_info.each do |attr_detail, names|
       pigeons+=names
@@ -19,18 +18,17 @@ def nyc_pigeon_organizer(data)
 end
 
 def find_specific_attrs(data,pigeon,att_name)
-  specific_arr=[]
+  spec_arr=[]
   data.each do |attr, attr_info|
     if attr == att_name
       attr_info.each do |attr_detail, names|
         if names.include?(pigeon)
-          specific_arr << attr_detail.to_s
+          spec_arr << attr_detail.to_s
         end
       end
     end
   end
-
-  return specific_arr
+  return spec_arr
 end
 
 pigeon_data = {
