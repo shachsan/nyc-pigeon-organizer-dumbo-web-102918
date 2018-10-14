@@ -3,7 +3,6 @@ def nyc_pigeon_organizer(data)
   pigeons=[]
   attributes = data.keys
 
-
   data.each do |attr, attr_info|
     attr_info.each do |attr_detail, names|
       pigeons+=names
@@ -35,24 +34,3 @@ def find_specific_attrs(data,pigeon,att_name)
 
   return specific_arr
 end
-#
-# pigeon_data = {
-#   :color => {
-#     :purple => ["Theo", "Peter Jr.", "Lucky"],
-#     :grey => ["Theo", "Peter Jr.", "Ms. K"],
-#     :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
-#     :brown => ["Queenie", "Alex"]
-#   },
-#   :gender => {
-#     :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
-#     :female => ["Queenie", "Ms. K"]
-#   },
-#   :lives => {
-#     "Subway" => ["Theo", "Queenie"],
-#     "Central Park" => ["Alex", "Ms. K", "Lucky"],
-#     "Library" => ["Peter Jr."],
-#     "City Hall" => ["Andrew"]
-#   }
-# }
-#
-# p nyc_pigeon_organizer(pigeon_data)
