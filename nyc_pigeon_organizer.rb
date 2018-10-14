@@ -12,9 +12,10 @@ def nyc_pigeon_organizer(data)
   unique_pigeons = pigeons.uniq
 
   unique_pigeons.each do |pigeon|
-    attr_hash = Hash.new 
+    attr_hash = Hash.new
     attributes.each do |att_name|
-      pigeon_list[pigeon][att_name]=find_specific_attrs(data,pigeon,att_name)
+      attr_hash[att_name]= find_specific_attrs(data,pigeon,att_name)
+      pigeon_list[pigeon]= attr_hash
     end
   end
   pigeon_list
