@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  pigeon_list = Hash.new {|h,k| h[k] = h.class.new(&h.default_proc) }
+  pigeon_list = Hash.new #{|h,k| h[k] = h.class.new(&h.default_proc) }
   pigeons=[]
   attributes = data.keys
 
