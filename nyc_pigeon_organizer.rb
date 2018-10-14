@@ -16,6 +16,7 @@ def nyc_pigeon_organizer(data)
       pigeon_list[pigeon][att_name]=find_specific_attrs(data,pigeon,att_name)
     end
   end
+  pigeon_list
 end
 
 def find_specific_attrs(data,pigeon,att_name)
