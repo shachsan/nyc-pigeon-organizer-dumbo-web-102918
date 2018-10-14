@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  pigeon_list = Hash.new 
+  pigeon_list = Hash.new
   pigeons=[]
   attributes = data.keys
 
@@ -35,7 +35,7 @@ def find_specific_attrs(data,pigeon,att_name)
 
   return specific_arr
 end
-# 
+#
 # pigeon_data = {
 #   :color => {
 #     :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -54,5 +54,5 @@ end
 #     "City Hall" => ["Andrew"]
 #   }
 # }
-# 
+#
 # p nyc_pigeon_organizer(pigeon_data)
